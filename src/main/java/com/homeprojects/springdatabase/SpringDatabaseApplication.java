@@ -24,7 +24,7 @@ public class SpringDatabaseApplication implements CommandLineRunner {
 	public void run(final String... args){
 		log.info("DataSource : "+ dataSource);
 		final JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-		jdbcTemplate.execute("select * from");
+		jdbcTemplate.execute("select 1");
 	}
 
 }
